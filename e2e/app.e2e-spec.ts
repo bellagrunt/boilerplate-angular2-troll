@@ -1,8 +1,8 @@
 import { browser, element, by } from 'protractor';
 
-describe('QuickStart E2E Tests', function () {
+describe('testing home page text', function () {
 
-  let expectedMsg = 'Hello Angular';
+  let expectedMsg = 'Home';
 
   beforeEach(function () {
     browser.get('');
