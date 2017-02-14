@@ -20,6 +20,7 @@ var app_contentComponent_1 = require('./content/app.contentComponent');
 var app_footerComponent_1 = require('./footer/app.footerComponent');
 var app_aboutComponent_1 = require('./about/app.aboutComponent');
 var app_contactComponent_1 = require('./contact/app.contactComponent');
+var app_newsComponent_1 = require('./news/app.newsComponent');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -40,10 +41,15 @@ var AppModule = (function () {
                     {
                         path: 'contact',
                         component: app_contactComponent_1.contactComponent
+                    },
+                    {
+                        path: 'news',
+                        component: app_newsComponent_1.newsComponent
                     }
                 ])
             ],
             declarations: [app_component_1.AppComponent,
+                app_newsComponent_1.newsComponent,
                 app_headerComponent_1.headerComponent,
                 app_navComponent_1.navComponent,
                 app_contentComponent_1.contentComponent,

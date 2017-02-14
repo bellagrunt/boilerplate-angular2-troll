@@ -5,6 +5,7 @@ import { contentComponent } from './content/app.contentComponent';
 import { footerComponent } from './footer/app.footerComponent';
 import { aboutComponent } from './about/app.aboutComponent';
 import { contactComponent } from './contact/app.contactComponent';
+import { newsComponent } from './news/app.newsComponent';
 
 @Component({
   selector: 'my-app',
