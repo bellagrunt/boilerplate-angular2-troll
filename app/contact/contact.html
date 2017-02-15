@@ -6,6 +6,28 @@
         <p>mattbellantoni3@gmail.com</p>
     </div>
 
+    <ul>
+        <li 
+            (click)="onSelect()"
+            [class.clicked]="showDetail === true">
+            {{contact.firstName}}
+        </li>
+        <li>
+            {{contact.lastName}}
+        </li>
+    </ul>    
+
+    <input [(ngModel)]="contact.firstName" type="text">
+    <div *ngIf="showDetail === true">
+        <ul>
+            <li>
+                {{contact.phone}}
+            </li>
+            <li>
+                {{contact.email}}
+            </li>
+        </ul>
+    </div>
 
 
 </section>

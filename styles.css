@@ -123,6 +123,9 @@ footer {
 	height: 300px;
 }
 
+.clicked {
+  color: red;
+}
 
 
 

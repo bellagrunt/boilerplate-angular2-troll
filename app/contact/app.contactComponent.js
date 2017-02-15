@@ -11,10 +11,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var contactComponent = (function () {
     function contactComponent() {
+        this.contact = { firstName: "Matt", lastName: "Bella", phone: "99", email: "mattbellantoni3@gmail.com" };
+        this.showDetail = false;
     }
+    contactComponent.prototype.onSelect = function () {
+        this.showDetail = true;
+    };
     contactComponent = __decorate([
         core_1.Component({
-            //   selector: '',
+            // selector: '',
             templateUrl: "./app/contact/contact.html",
         }), 
         __metadata('design:paramtypes', [])
