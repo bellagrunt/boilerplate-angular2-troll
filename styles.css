@@ -62,7 +62,7 @@ header {
 header .logo img {
   position: absolute;
   left: 88px;
-  top: 20%;
+  top: 1%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateY(-50%);
   transform: translateX(-50%);
