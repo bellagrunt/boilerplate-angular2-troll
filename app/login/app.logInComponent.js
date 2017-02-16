@@ -9,22 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var contactComponent = (function () {
-    function contactComponent() {
-        this.contact = {
-            firstName: "Matt",
-            lastName: "Bella",
-            phone: "99",
-            email: "mattbellantoni3@gmail.com" };
+var forms_1 = require('@angular/forms');
+var logInComponent = (function () {
+    function logInComponent(fb) {
+        this.fb = fb;
+        this.loginForm = this.fb.group({
+            email: ["", forms_1.Validators.required],
+            password: ["", forms_1.Validators.required]
+        });
     }
-    contactComponent = __decorate([
+    logInComponent.prototype.doLogin = function (event) {
+        console.log(event);
+        console.log(this.loginForm.value);
+    };
+    logInComponent = __decorate([
         core_1.Component({
-            // selector: '',
-            templateUrl: "./app/contact/contact.html",
+            templateUrl: './app/login/login.html',
         }), 
-        __metadata('design:paramtypes', [])
-    ], contactComponent);
-    return contactComponent;
+        __metadata('design:paramtypes', [forms_1.FormBuilder])
+    ], logInComponent);
+    return logInComponent;
 }());
-exports.contactComponent = contactComponent;
-//# sourceMappingURL=app.contactComponent.js.map
+exports.logInComponent = logInComponent;
+//# sourceMappingURL=app.logInComponent.js.map

@@ -7,27 +7,20 @@
     </div>
 
     <ul>
-        <li 
-            (click)="onSelect()"
-            [class.clicked]="showDetail === true">
+        <li>
             {{contact.firstName}}
         </li>
         <li>
             {{contact.lastName}}
         </li>
+        <li>
+            {{contact.phone}}
+        </li>
+        <li>
+            {{contact.email}}
+        </li>
     </ul>    
 
-    <input [(ngModel)]="contact.firstName" type="text">
-    <div *ngIf="showDetail === true">
-        <ul>
-            <li>
-                {{contact.phone}}
-            </li>
-            <li>
-                {{contact.email}}
-            </li>
-        </ul>
-    </div>
-
+    <!--<input [(ngModel)]="contact.firstName")] type="text">-->
 
 </section>

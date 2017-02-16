@@ -5,7 +5,8 @@ import { RouterModule }  from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ResponsiveState } from 'responsive-directives-angular2';
 import { CommonModule } from '@angular/common';
-
+import { HttpModule } from '@angular/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent }  from './app.component';
 import { headerComponent } from './header/app.headerComponent';
@@ -15,6 +16,9 @@ import { footerComponent } from './footer/app.footerComponent';
 import { aboutComponent } from './about/app.aboutComponent';
 import { contactComponent } from './contact/app.contactComponent';
 import { newsComponent } from './news/app.newsComponent';
+import { logInComponent } from './login/app.logInComponent';
+
+
 
 
 
@@ -22,6 +26,8 @@ import { newsComponent } from './news/app.newsComponent';
   imports:      [ BrowserModule,
                   CommonModule,
                   FormsModule,
+                  ReactiveFormsModule,
+                  HttpModule,
                   RouterModule.forRoot([
                     {
                       path: '',
@@ -38,7 +44,11 @@ import { newsComponent } from './news/app.newsComponent';
                     {
                       path: 'news',
                       component: newsComponent
-                    }
+                    },
+                    {
+                      path: 'login',
+                      component: logInComponent
+                    }    
                   ])
 
                 ],
@@ -49,8 +59,10 @@ import { newsComponent } from './news/app.newsComponent';
                   contentComponent,
                   footerComponent,
                   aboutComponent,
-                  contactComponent
+                  contactComponent,
+                  logInComponent
                 ],
+  providers: [],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
