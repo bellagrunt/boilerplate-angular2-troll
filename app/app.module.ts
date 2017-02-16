@@ -11,7 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent }  from './app.component';
 import { headerComponent } from './header/app.headerComponent';
 import { navComponent } from './nav/app.navComponent';
-import { contentComponent } from './content/app.contentComponent';
+import { homeComponent } from './home/app.homeComponent';
 import { footerComponent } from './footer/app.footerComponent';
 import { aboutComponent } from './about/app.aboutComponent';
 import { contactComponent } from './contact/app.contactComponent';
@@ -31,7 +31,7 @@ import { logInComponent } from './login/app.logInComponent';
                   RouterModule.forRoot([
                     {
                       path: '',
-                      component: contentComponent
+                      component: homeComponent
                     },
                     {
                       path: 'about',
@@ -56,7 +56,7 @@ import { logInComponent } from './login/app.logInComponent';
                   newsComponent,
                   headerComponent, 
                   navComponent,
-                  contentComponent,
+                  homeComponent,
                   footerComponent,
                   aboutComponent,
                   contactComponent,
