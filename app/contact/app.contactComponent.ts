@@ -14,8 +14,8 @@ export class contactComponent {
 
   public contact = {
   firstName: "Matt", 
-  lastName: "Bella", 
-  phone: "99", 
-  email: "mattbellantoni3@gmail.com"};
+  lastName: "Bellantoni", 
+  phone: "000-000-0000", 
+  email: "..."};
 
 }

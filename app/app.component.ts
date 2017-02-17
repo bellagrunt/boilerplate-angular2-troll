@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { headerComponent } from './header/app.headerComponent';
 import { navComponent } from './nav/app.navComponent';
-import { contentComponent } from './content/app.contentComponent';
+import { homeComponent } from './home/app.homeComponent';
 import { footerComponent } from './footer/app.footerComponent';
 import { aboutComponent } from './about/app.aboutComponent';
 import { contactComponent } from './contact/app.contactComponent';

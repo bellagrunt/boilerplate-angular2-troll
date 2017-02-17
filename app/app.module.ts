@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
 import { AppComponent }  from './app.component';
 import { headerComponent } from './header/app.headerComponent';
 import { navComponent } from './nav/app.navComponent';
@@ -17,6 +18,7 @@ import { aboutComponent } from './about/app.aboutComponent';
 import { contactComponent } from './contact/app.contactComponent';
 import { newsComponent } from './news/app.newsComponent';
 import { logInComponent } from './login/app.logInComponent';
+
 
 
 
@@ -61,6 +63,7 @@ import { logInComponent } from './login/app.logInComponent';
                   aboutComponent,
                   contactComponent,
                   logInComponent
+                  
                 ],
   providers: [],
   bootstrap:    [ AppComponent ]
