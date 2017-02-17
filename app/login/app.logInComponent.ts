@@ -13,8 +13,8 @@ export class logInComponent {
     password: ["", Validators.required]
   });
   constructor(public fb: FormBuilder) {}
-  doLogin(event) {
-    console.log(event);
-    console.log(this.loginForm.value);
-  }
+  // doLogin(event) {
+  //   console.log(event);
+  //   console.log(this.loginForm.value);
+  // }
 }

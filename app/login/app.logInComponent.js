@@ -18,10 +18,6 @@ var logInComponent = (function () {
             password: ["", forms_1.Validators.required]
         });
     }
-    logInComponent.prototype.doLogin = function (event) {
-        console.log(event);
-        console.log(this.loginForm.value);
-    };
     logInComponent = __decorate([
         core_1.Component({
             templateUrl: './app/login/login.html',
